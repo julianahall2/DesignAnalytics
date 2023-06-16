@@ -3,130 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Meu Site</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: Arial, sans-serif;
-    }
-    
-    /* Estilos do header */
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      color: #000;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      font-size: 34px;
-    }
-    
-    .logo img {
-      width: 300px;
-      height: auto;
-      cursor: pointer;
-    }
-    
-    .menu {
-      display: flex;
-    }
-    
-    .menu a {
-      color: #000;
-      text-decoration: none;
-      margin-left: 20px;
-    }
-    
-    /* Estilos do menu hambúrguer */
-    .menu-icon {
-      font-size: 24px;
-      cursor: pointer;
-      display: none;
-      color: #000;
-    }
-    
-    /* Estilos do menu dropdown */
-    .menu-dropdown {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #fff;
-      width: 100%;
-      padding: 20px;
-    }
-    
-    .menu-dropdown.show {
-      display: block;
-    }
-    
-    .menu-dropdown a {
-      display: block;
-      color: #000;
-      text-decoration: none;
-      margin-bottom: 10px;
-    }
-    
-    /* Estilos do footer */
-    .footer {
-      background-color: #f9f9f9;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    /* Estilos da seção de contato */
-    .contact-section {
-      padding: 40px;
-    }
-    
-    .contact-section input[type="email"],
-    .contact-section input[type="tel"] {
-      width: 100%;
-      padding: 10px;
-      margin-top: 120px;
-    }
-    
-    /* Estilos da seção de serviços */
-    .services-section {
-      padding: 40px;
-    }
-    
-    .service {
-      margin-bottom: 20px;
-    }
-    
-    @media only screen and (max-width: 768px) {
-      .menu {
-        display: none;
-      }
-      
-      .menu-icon {
-        display: block;
-      }
-      
-      .header {
-        justify-content: space-between;
-      }
-    }
-  </style>
+  
 </head>
 <body>
   <header class="header">
     <div class="logo">
       <a href="/">
-        <img src="Captura de Tela 2023-06-15 às 13.29.55.png" alt="Logo">
+        <img src="logo.png" alt="Logo">
       </a>
     </div>
     <nav class="menu">
@@ -145,19 +30,22 @@
   </header>
 
   <div class="contact-section">
-    <h2>Entre em contato</h2>
+    <h2>Formulário de contato</h2>
+    <p>Envie uma mensagem e nossa equipe entrará em contato o mais breve possível!</p>
     <input type="email" placeholder="E-mail">
     <input type="tel" placeholder="Telefone">
+    <button id="botao" class="botao-envio">Enviar</button>
+
   </div>
 
   <div class="services-section">
     <h2>Serviços</h2>
     <div class="service">
-      <h3>Serviço 1</h3>
+      <h3>Posts e Stories</h3>
       <p>Descrição do serviço 1</p>
     </div>
     <div class="service">
-      <h3>Serviço 2</h3>
+      <h3>Dashboards</h3>
       <p>Descrição do serviço 2</p>
     </div>
     <div class="service">
